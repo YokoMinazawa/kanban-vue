@@ -1,0 +1,33 @@
+<script setup lang="ts">
+  import WorkspaceField from './WorkspaceField.vue'
+</script>
+
+<template>
+  <!-- <WorkspaceField></WorkspaceField> -->
+
+  <div class="main-container">
+    <main class="column-container">
+      <WorkspaceField />
+    </main>
+  </div>
+</template>
+
+<style lang="css" scoped>
+  .main-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  @media (max-width: 600px) {
+    .column-container {
+      grid-template-columns: 1fr;
+    }
+
+    .column {
+      max-height: none;
+    }
+  }
+</style>
